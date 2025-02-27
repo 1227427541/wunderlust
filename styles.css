@@ -62,7 +62,7 @@ table {
   }
 
   h1, h2, h3 {
-    font-family: "Molle", cursive;
+    font-family: "Molle";
     color: var(--black)
   }
 
@@ -70,6 +70,8 @@ table {
     font-family: "Montserrat", sans-serif;
     color: var(--black);
   }
+
+ 
 
   body {
     background-color: var(--white);
