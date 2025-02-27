@@ -62,7 +62,6 @@ table {
 }
 
 
-
 h1, h2, h3 {
     font-family: "Molle", cursive;
     color: var(--black)
@@ -111,9 +110,10 @@ header p {
 }
 
 header #logo{
-	display: block;
+	display: flex;
+    justify-content: flex-start;
 	width: 100%;
-	max-width: 250px;
+	max-width: 300px;
 	margin: 0 auto;
 }
 
