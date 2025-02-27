@@ -61,8 +61,10 @@ table {
     --black: #000000; 
 }
 
+
+
 h1, h2, h3 {
-    font-family: 'Molle';
+    font-family: "Molle", cursive;
     color: var(--black)
 }
 
