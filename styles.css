@@ -108,3 +108,10 @@ header p {
     line-height: 32px;
 }
 
+header #logo{
+	display: block;
+	width: 100%;
+	max-width: 250px;
+	margin: 0 auto;
+}
+
