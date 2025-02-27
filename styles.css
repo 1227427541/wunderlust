@@ -62,19 +62,19 @@ table {
 }
 
 h1, h2, h3 {
-    font-family: "Molle";
+    font-family: 'Molle';
     color: var(--black)
 }
 
 h4, p, q, small, nav, button, form {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--black);
 }
 
 
 body {
     background-color: var(--white);
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
