@@ -107,11 +107,10 @@ nav {
 }
 
 #menu-toggle {
-    display: inline-block;
-    position: absolute;
-    top: -180px; 
-    left: 200px; 
+    display: flex;
+    justify-content: right;
     width: 30px; 
+    background-color: var(--yellow);
 }
 
 
