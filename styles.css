@@ -81,6 +81,9 @@ body {
 
 header {
     background: linear-gradient(#499BD2, #FFFFFF);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
 }
      
 h1 {
@@ -95,9 +98,11 @@ header p {
 }
 
 header #logo{
-	display: block;
+	display: flex;
+    align-items: flex-start;
     padding: 5px;
 	width: 150px;
+    height: auto;
 }
 
 /* Nav Styles */
@@ -105,16 +110,23 @@ header #logo{
 
 #menu-toggle label {
     background-color: var(--yellow);
-    padding: 10px 60px; 
-    margin: 70px; 
-    margin-left: 48px; 
+    position: relative;
+    display: block;
+    padding: 25px;
+    width: auto;
+    z-index: 2;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 #menu-toggle input {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: 20px; 
+    padding: 0px;
     opacity: 0;
-    margin-left: 100px;
+    left: -5px;
 }
 
 #menu-toggle a {
@@ -125,16 +137,22 @@ header #logo{
 }
 
 #menu-toggle ul {
-    padding: 10px;
-    margin-left: 50px;
+    padding: 0px;
+    margin: 0px;
     background-color: var(--teal);
+    border-bottom: 2px solid;
+    border-color: var(--black);
     list-style-type: none;
+    text-align: center;
     visibility: hidden;
+    width: 100%;
 }
 
 #menu-toggle input:checked + label {
     background-color: var(--black);
     color: var(--white);
+    padding: 5px;
+    right: 200px;
     text-align: center;
 } 
 
