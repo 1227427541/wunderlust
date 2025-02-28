@@ -87,7 +87,8 @@ header {
 }
      
 h1 {
-    font-size: 40px;
+    font-size: 100px;
+    font-weight: bold;
 }
 
 header p {
@@ -198,6 +199,7 @@ header #logo{
 
 h2 {
     font-size: 50px; 
+    font-weight: bold;
     padding: 10px 15px;
 }
 
