@@ -610,19 +610,11 @@ footer a {
 
 @media screen and (min-width:1200px) {
     
-    nav{
+    
+    #menu-toggle{
         position: relative;
-        top: 0;
-        right: 0;
-        bottom: 0;
-    }
-
-    #menutoggle ul {
-        display: flex;
-        gap: 15px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        left: 20%;
+        top: -800%;
     }
 
     #intro {
@@ -656,7 +648,8 @@ footer a {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
         align-items: center;
-        margin: 0px;
+        margin: 0;
+        padding: 15px;
     }
 
     #plan section, #plan img #plan a {
