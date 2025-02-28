@@ -75,6 +75,27 @@ h4, p, q, small, nav, button, form {
 body {
     background-color: var(--white);
     width: 100%;
+    overflow: hidden;
+}
+
+/* Accessibility Styles */
+
+#skip {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
 
 /* Header Styles */
