@@ -89,12 +89,6 @@ body {
     overflow: hidden;
 }
 
-#skip:focus{
-    position: static;
-    width: auto;
-    height: auto;
-  }
-
 .sr-only {
     position: absolute;
     left: -10000px;
@@ -547,7 +541,7 @@ footer a {
         font-size: 15px;
     }
 
-    #menu-toggle ul li a:hover {
+    #menu-toggle ul li a:active {
         background-color: var(--yellow); 
     }
 
