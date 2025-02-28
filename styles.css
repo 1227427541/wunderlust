@@ -125,18 +125,41 @@ nav #menu-toggle {
     background-color: var(--white);
     display: block;
     text-align: center;
-    text-transform: uppercase;
 }
 
 nav .active {
     background-color: var(--yellow);
 }
 
-nav ul {
-    display: 
+nav ul li a{
+    display: block;
+    text-transform: uppercase;
+}
+
+#menu-toggle a:hover {
+
 
 }
 
 
 
 
+
+/*Large Screens*/
+
+@media (min-width: 1250px) {
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    #menutoggle ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
