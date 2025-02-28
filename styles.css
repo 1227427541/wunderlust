@@ -105,69 +105,50 @@ header #logo{
 
 /* Nav Styles */
 
-#menu-toggle {
-    display: block;
-    position: relative;
-    z-index: 1;
-    top: -190px;
-    left: 210px;
-    background-color: var(--yellow);
-    color: black;
+#menu-toggle{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1; 
 }
 
 #menu-toggle label {
-    display: block;
-    position: relative; 
-    width: auto;
-    z-index: 2;
     background-color: var(--yellow);
-    padding: 20px;
+    padding: 10px 60px; 
+    margin: 70px; 
+    margin-left: 48px; 
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #menu-toggle input {
-    position: relative;
-    width: 25px;
-    height: 25px;
     opacity: 0;
-    top: 25px;
-    left: -5px;
-    padding: 0px;
+    margin-left: 100px;
 }
 
 #menu-toggle a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
+    display: block;
+    padding: 10px;
 }
 
 #menu-toggle ul {
-    display: flex;
-    flex-flow: column;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    padding: 10px;
+    margin-left: 50px;
     background-color: var(--teal);
+    list-style-type: none;
+    visibility: hidden;
 }
 
-#menu-toggle ul li {
-    padding: 20px;
-    font-size: 15px;
-    border-bottom: 2px solid;
-    border-bottom-color: var(--black);
-    text-decoration: none;
-    text-transform: uppercase;
-}
 
 #menu-toggle input:checked + label {
     background-color: var(--black);
     color: var(--white);
     text-align: center;
-    right: 200px;
-    padding: 5px;
 } 
 
 #menu-toggle input:checked ~ ul {
-    right: 200px;
+    visibility: visible;
 }
 
 /* Accessibility Styles */
