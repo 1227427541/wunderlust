@@ -353,7 +353,7 @@ h2 {
 }
 
 #contact .form-required {
-    font-size: 25px;
+    font-size: 15px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -373,7 +373,7 @@ h2 {
     width: 100%;
 }
 
-input::placeholder {
+form input::placeholder {
     font-size: 5px;
     color: var(--light-gray);
 }
