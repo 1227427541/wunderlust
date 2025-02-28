@@ -483,20 +483,29 @@ footer a {
         gap: 15px; 
     }
 
+    header p {
+        line-height: 2;
+    }
+
     nav {
-        margin: 0 auto;
-        order: 2; 
+        top: auto;
+        left: auto;
+        position: static;
+        z-index: 0;
     }
 
     #menu-toggle label {
-        visibility: hidden;
+        display: none;
     }
 
     #menu-toggle ul {
-        visibility: visibile;
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        flex-grow: 1;
+        justify-content: center; 
         gap: 16px;
+        color: var(--black);
+        font-weight: bold;
         align-items: center;
     }
 
@@ -536,7 +545,6 @@ footer a {
     #plan div {
         display: grid;
         grid-template-columns: repeat (2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
     }
     
     #testimonials div {
