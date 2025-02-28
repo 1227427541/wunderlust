@@ -567,14 +567,16 @@ footer a {
         grid-column: span 2;
     }
 
-    #plan div {
+    #plan div{
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
     
     #testimonials div {
         display: grid; 
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
     #about div {
@@ -659,15 +661,25 @@ footer a {
         grid-gap: 8px;
     }
 
+    #plan{
+        padding: 30px;
+    }
+
     #plan div{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        margin: 0;
     }
-    #plan div section{
-        padding: 20px;
+
+    #plan section, #plan img, #plan a{
+        height: 80%;
+        width: auto;
     }
-    #plan img{
-        width: 70%;
+
+    #plan h4{
+        font-size: 15px;
     }
 
     #testimonials {
@@ -679,6 +691,7 @@ footer a {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
         align-items: center;
+        margin: 15px;
     }
 
     #testimonials section {
