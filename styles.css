@@ -313,18 +313,23 @@ header #logo{
 #contact {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 
 #contact h3 {
     font-size: 30px;
     margin-top: 10px;
 }
 
-form.form-required {
+#contact .form-required {
     font-size: 8x;
 }
 
-form label {
+#contact label {
     font-weight: 400;
     font-size: 15px;
     text-transform: uppercase;
@@ -332,13 +337,15 @@ form label {
     margin-bottom: 5px;
 }
 
-form input {
+#contact input {
     border: 2px solid;
     border-color: var(--purple);
     padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-form input::placeholder {
+input::placeholder {
     font-size: 5px;
     color: var(--light-gray);
 }
@@ -347,12 +354,12 @@ span .required {
     color: var(--purple);
 }
 
-#nums fieldset {
+fieldset {
     margin: 20px 0;
     padding: 0; 
 }
 
-#nums legend {
+legend {
     font-weight: 400;
     font-size: 15px;
     text-transform: uppercase;
@@ -360,10 +367,17 @@ span .required {
     margin-bottom: 5px;
 }
 
-#nums label {
+label {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    margin: 0;
+    position: absolute;
+
 }
 
 .radio-control {
@@ -375,6 +389,7 @@ span .required {
     border-radius: 50%;
     margin-right: 10px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .radio-control::before {
