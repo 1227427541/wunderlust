@@ -81,9 +81,9 @@ body {
 
 header {
     background: linear-gradient(#499BD2, #FFFFFF);
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: column; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
      
 h1 {
@@ -105,8 +105,7 @@ header #logo{
 
 /* Nav Styles */
 
-#menu-toggle{
-    display: grid;
+menu{
     grid-column: 2;
     grid-row: 1; 
 }
