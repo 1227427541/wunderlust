@@ -266,6 +266,7 @@ header #logo{
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 5px; 
+    text-wrap: wrap;
 }
 
 #testimonials p { 
@@ -276,6 +277,7 @@ header #logo{
     font-size: 15px; 
     font-style: italic;
     line-height: 10px; 
+    text-wrap: balance;
 }
 
 #about {
