@@ -454,7 +454,7 @@ footer a {
     font-size: 10px; 
     color: var(--dark-gray);
 }
-/*Small Screens*/
+/*Medium Screens*/
 
 @media screen and (min-width:700px) {
     header {
@@ -554,8 +554,8 @@ footer a {
     }
 
     input[type="radio"]{
-        width: 65px;
-        height: 65px;
+        width: 4em;
+        height: 4em;
     }
 
     input[type="radio"]:checked::before{
@@ -580,7 +580,149 @@ footer a {
  
 }
 
+/*LArge Screens*/
 
-/*Large Screens*/
+@media screen and (min-width:1200px) {
+    
+    nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #menutoggle ul {
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #intro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 2fr;
+        padding: 30px;
+    }
+
+    h2 {
+        padding-top: 30px;
+    }
+
+    #intro p {
+        grid-column: 1/2;
+    }
+
+    #img-grid {
+        grid-column: 2/-1;
+        grid-row: 1/3;
+        grid-gap: 8px;
+    }
+
+    #plan {
+        padding: 30px;
+    }
+
+    #plan div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin: 0px;
+    }
+
+    #plan section, #plan img #plan a {
+        height: 80%;
+        width: auto;
+    }
+
+    #plan h4 {
+        font-size: 15px;
+    }
+
+    #testimonials {
+        margin: 30px
+    }
+
+    #testimonials div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin: 15px;
+    }
+
+    #testimonials section {
+        height: 70%;
+        width: auto;
+        justify-content: center;
+    }
+
+    #testimonials h3 {
+        font-size: 45px
+    }
+
+    #testimonials h4 {
+        font-size: 20px;
+    }
+
+    #testimonials q {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    #about {
+        padding: 30px 0; 
+    }
+
+    #about h3 {
+        text-align: left;
+        padding: 0 30px;
+    }
+
+    #about div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #contact {
+        margin: 30px;
+    }
+
+    #contact h3 {
+        padding: 0px;
+    }
+
+    #contact form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 10px; 
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input {
+        margin-left: 0px;
+    }
+
+    .radio-label{
+        padding: 5px 30px;
+    }
+
+    form #mySubmit {
+        width: 75%;
+        margin: 45px;
+        margin-left: 25%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 5fr 1fr 1fr;
+    }
+
+}
 
 
