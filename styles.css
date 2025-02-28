@@ -749,6 +749,10 @@ footer a {
         margin-left: 0px;
     }
 
+    fieldset {
+        display: flex;
+    }
+
 
     form #mySubmit {
         width: 75%;
