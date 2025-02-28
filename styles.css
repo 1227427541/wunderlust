@@ -81,24 +81,6 @@ body {
 header {
     background: linear-gradient(#499BD2, #FFFFFF);
 }
-
-.sr-only {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-}
-
-#skip{
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-}
      
 h1 {
     font-size: 35px;
@@ -117,6 +99,44 @@ header #logo{
 	margin: 0 auto;
 }
 
+/* Accessibility Styles */
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+#skip{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
 /* Navigation Styles */
+
+nav #menu-toggle {
+    background-color: var(--white);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav .active {
+    background-color: var(--yellow);
+}
+
+nav ul {
+    display: 
+
+}
+
+
 
 
