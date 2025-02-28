@@ -74,30 +74,60 @@ h4, p, q, small, nav, button, form {
 
 
 body {
-    background-color: var(--white);
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--black);
+    width: 100%;
 }
 
 header {
     background: linear-gradient(#499BD2, #FFFFFF);
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column; 
 }
      
 h1 {
-    font-size: 35px;
+    font-size: 50px;
 }
 
 header p {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 30px;
+    text-align: left;
 }
 
 header #logo{
 	display: flex;
     justify-content: flex-start;
+    padding: 1px;
 	width: 100%;
 	max-width: 300px;
-	margin: 0 auto;
 }
+
+nav {
+    background-color: var(--white);
+    text-align: center;
+}
+
+nav .active {
+    background-color: var(--yellow);
+}
+
+#menu-toggle ul li {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    background-color: var(--teal);
+    color: black;
+    padding: 15px;
+
+}
+
+#toggle input:checked + label {
+    background-color: var(--black);
+    color: var(--white);
+} 
+
 
 /* Accessibility Styles */
 
@@ -121,26 +151,9 @@ header #logo{
 
 /* Navigation Styles */
 
-nav #menu-toggle {
-    background-color: var(--white);
-    display: block;
-    text-align: center;
-}
-
-nav .active {
-    background-color: var(--yellow);
-}
-
-nav ul li a{
-    display: block;
-    text-transform: uppercase;
-}
-
-#menu-toggle a:hover {
 
 
-}
-
+/*Small Screens*/
 
 
 
