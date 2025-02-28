@@ -393,31 +393,41 @@ label {
 input[type="radio"] {
     appearance: none;
     margin: 0;
-    color: var(--purple);
-    width: 3em;
-    height: 3em;
+    position: absolute;
+}
+
+.radio-control {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
     border: 2px solid;
     border-color: var(--purple);
     border-radius: 50%;
-    display: grid;
-    place-content: center;
-
+    margin-right: 15px;
+    position: relative;
+    flex-shrink: 0;
 }
 
-input[type="radio"]::before{
+.radio-control::before {
     content: "";
-    width: 1em;
-    height: 1em; 
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--purple);
     border-radius: 50%;
-    transform: scale(0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+input[type="radio"]:checked + .radio-control::before {
+    opacity: 1;
 }
 
 .radio-label {
-    padding: 5px 5px; 
-}
-
-input[type="radio"]:checked::before{
-    transform: scale(2);
+    font-size: 15px;
 }
 
 .custom-select select {
@@ -566,20 +576,7 @@ footer a {
     }
 
     input, .custom-select {
-        padding: 5px;;
-    }
-
-    input[type="radio"]{
-        width: 4em;
-        height: 4em;
-    }
-
-    input[type="radio"]:checked::before{
-        transform: scale(2.5);
-    }
-
-    .radio-label {
-        padding: 10px 35px;
+        padding: 5px;
     }
 
     form #mySubmit {
@@ -725,9 +722,6 @@ footer a {
         margin-left: 0px;
     }
 
-    .radio-label{
-        padding: 5px 30px;
-    }
 
     form #mySubmit {
         width: 75%;
