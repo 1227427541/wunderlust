@@ -107,7 +107,8 @@ nav {
 }
 
 #menu-toggle {
-    display: relative;
+    display: block;
+    position: relative;
     top: -180px;
     left: 200px;
     width: 30px; 
