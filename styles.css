@@ -73,7 +73,7 @@ h4, p, q, small, nav, button, form {
 }
 
 body {
-    background-color: var(--black);
+    background-color: var(--white);
     width: 100%;
 }
 
@@ -197,16 +197,19 @@ header #logo{
 
 #img-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minax(350px, 1fr));
+    grid-template-columns: 1fr;
+    padding: 10px 0;
     grid-gap: 10px;
+}
+
+#img-grid img {
+    width: 100%;
+    height: auto;
 }
 
 #plan div {
     background-color: var(--yellow);
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
-    margin: 10px;
+    margin: 15px;
     justify-content: center;
     align-items: center;
 }
@@ -217,17 +220,19 @@ header #logo{
 
 #plan h4 {
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin: 15px;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
 }
 
 #plan section {
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    background-color: var(--teal);
     align-items: center;
     justify-content: center;
+    padding: 15px;
     border: 2px solid;
     border-color: var(--white);
     border-radius: 15px;
@@ -235,7 +240,9 @@ header #logo{
 
 #plan img {
     display: block; 
-    margin: 0;
+    margin: 0 autp;
+    width: 60px;
+    height: auto;
 }
 
 /*Small Screens*/
