@@ -299,11 +299,11 @@ header #logo{
 #about img {
     margin-bottom: 15px;
     width: 50%;
-    height: auto;
+    height: 50%;
 }
 
 #about h3 {
-    font-size: 50x;
+    font-size: 50px;
     font-weight: bold;
     padding: 20px;
 }
