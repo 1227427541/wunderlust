@@ -140,7 +140,6 @@ header #logo{
     visibility: hidden;
 }
 
-
 #menu-toggle input:checked + label {
     background-color: var(--black);
     color: var(--white);
