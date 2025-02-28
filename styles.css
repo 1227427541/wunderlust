@@ -358,7 +358,7 @@ h2 {
 }
 
 #contact label {
-    font-weight: 400;
+    font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
     margin-top: 15px;
@@ -383,12 +383,11 @@ span .required {
 }
 
 fieldset {
-    margin: 20px 0;
-    padding: 0; 
+   padding-bottom: 15px; ;
 }
 
 legend {
-    font-weight: 400;
+    font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 8px;
@@ -398,15 +397,15 @@ label {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    border: none;
+    margin-left: 8px; 
 }
 
 input[type="radio"] {
     appearance: none;
     margin: 0;
     color: var(--purple);
-    width: 50px;
-    height: 50px;
+    width: 3em;
+    height: 3em;
     border: 2px solid;
     border-color: var(--purple);
     border-radius: 50%;
@@ -417,10 +416,18 @@ input[type="radio"] {
 
 input[type="radio"]::before{
     content: "";
-    width: 16px;
-    height: 16px; 
+    width: 1em;
+    height: 1em; 
     border-radius: 50%;
     transform: scale(0);
+}
+
+.radio-label {
+    padding: 5px 5px; 
+}
+
+input[type="radio"]:checked::before{
+    transform: scale(2);
 }
 
 .custom-select select {
