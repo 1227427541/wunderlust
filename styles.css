@@ -302,7 +302,8 @@ header #logo{
 }
 
 #about h3 {
-    font-size: 30x;
+    font-size: 50x;
+    font-weight: bold;
     padding: 20px;
 }
 
@@ -328,12 +329,13 @@ header #logo{
 
 
 #contact h3 {
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: bold;
     margin-top: 10px;
 }
 
 #contact .form-required {
-    font-size: 8x;
+    font-size: 10px;
 }
 
 #contact label {
