@@ -97,42 +97,65 @@ header p {
 
 header #logo{
 	display: block;
-    padding: 10px;
+    padding: 5px;
 	width: 150px;
-}
-
-nav {
-    background-color: var(--white);
-    text-align: center;
 }
 
 #menu-toggle {
     display: block;
     position: relative;
+    z-index: 1;
     top: -180px;
     left: 200px;
-    width: 30px; 
     background-color: var(--yellow);
     color: black;
 }
 
-
-#menu-toggle ul li a {
-    display: block;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    font-size: 10px;
-    background-color: var(--teal);
-    color: black;
-    padding: 15px;
-
+#menu-toggle input {
+    position: relative;
+    width: 20px;
+    height: auto;
+    top: 20px;
+    left: -10px;
+    padding: 0;
 }
 
-#toggle input:checked + label {
+#menu-toggle label {
+    display: block;
+    position: relative; 
+    z-index: 2;
+    background-color: var(--yellow);
+    padding: 10px;
+}
+
+#menu-toggle li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#menu-toggle ul {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    background-color: var(--teal);
+}
+
+#menu-toggle ul li {
+    padding: 20px;
+    font-size: 15px;
+    border-bottom: 2px solid;
+    border-bottom-color: var(--black);
+}
+
+#menu-toggle input:checked + label {
     background-color: var(--black);
     color: var(--white);
+    text-align: center;
+    right: 200px;
+    padding: 5px;
 } 
+
 
 
 /* Accessibility Styles */
