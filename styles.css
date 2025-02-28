@@ -606,7 +606,7 @@ footer a {
  
 }
 
-/*LArge Screens*/
+/*Large Screens*/
 
 @media screen and (min-width:1200px) {
     
@@ -669,8 +669,7 @@ footer a {
     }
 
     #testimonials {
-        padding:50pc
-
+        padding: 40px;
     }
 
     #testimonials div {
