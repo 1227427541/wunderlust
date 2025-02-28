@@ -483,15 +483,13 @@ footer a {
         gap: 15px; 
     }
 
-    header p {
+    #intro p {
         line-height: 2;
     }
 
     nav {
-        top: auto;
-        left: auto;
-        position: static;
-        z-index: 0;
+        margin: 0 auto;
+        order: 2;
     }
 
     #menu-toggle label {
@@ -500,28 +498,23 @@ footer a {
 
     #menu-toggle ul {
         display: flex;
-        flex-direction: row;
-        flex-grow: 1;
-        justify-content: center; 
-        gap: 16px;
-        color: var(--black);
-        font-weight: bold;
-        align-items: center;
+        gap: 15px;
     }
 
-    #menu-toggle li a {
-        background-color: var(--white);
-        padding: 10px 20px;
-        margin: 0px;
+    #menu-toggle ul li {
+        border: none;
+        background: none;
+    }
+
+    #menu-toggle ul li a {
+        background: var(--white);
+        padding: 15px 30px;
+        margin: 0;
         font-size: 15px;
     }
 
-    #menu-toggle li a:active {
-        background-color: var(--yellow);
-    }
-
-    #menu-toggle li a:hover {
-        background-color: var(--yellow);
+    #menu-toggle ul li a:hover {
+        background-color: var(--yellow); 
     }
 
     #img-grid {
@@ -610,11 +603,19 @@ footer a {
 
 @media screen and (min-width:1200px) {
     
-    
-    #menu-toggle{
-        position: relative;
-        left: 20%;
-        top: -800%;
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    #menutoggle ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     #intro {
