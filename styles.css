@@ -390,6 +390,51 @@ span .required {
 .radio-label {
     font-size: 15px;
 }
+
+.custom-select select {
+    font-size: 15px;
+    color: var(--black);
+    border: 2px solid;
+    border-color: var(--purple);
+    padding: 5px 15px;
+}
+
+.custom-select {
+    display: inline-block;
+    position: relative; 
+}
+
+form #mySubmit {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 10px 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 15px;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 6px;
+    font-size: 8px; 
+}
 /*Small Screens*/
 
 
