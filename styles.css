@@ -255,12 +255,13 @@ header #logo{
 }
 
 #testimonials h3 {
-    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
     padding: 20px; 
 }
 
 #testimonials h4 {
-    font-weight: 500; 
+    font-weight: bold; 
     font-size: 20px; 
     text-transform: uppercase;
     margin-top: 10px;
