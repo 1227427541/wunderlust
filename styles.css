@@ -75,7 +75,6 @@ h4, p, q, small, nav, button, form {
 body {
     background-color: var(--white);
     width: 100%;
-    overflow: hidden;
 }
 
 /* Accessibility Styles */
@@ -659,26 +658,17 @@ footer a {
         grid-gap: 8px;
     }
 
-    #plan {
-        padding: 30px;
-    }
-
-    #plan div {
+    #plan div{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        align-items: center;
-        margin: 0;
-        padding: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    #plan section, #plan img #plan a {
-        height: 80%;
-        width: auto;
+    #plan section{
+        padding: 20px;
     }
 
-    #plan h4 {
-        font-size: 15px;
+    #plan img{
+        width: 70%;
     }
 
     #testimonials {
