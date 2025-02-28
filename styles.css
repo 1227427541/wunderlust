@@ -511,6 +511,10 @@ footer a {
         gap: 15px; 
     }
 
+    #intro {
+        padding-left: 30px;
+    }
+
     #intro p {
         line-height: 2;
     }
