@@ -115,9 +115,10 @@ nav {
 }
 
 
-#menu-toggle ul li {
+#menu-toggle ul li a {
     display: block;
     text-transform: uppercase;
+    text-decoration: none;
     text-align: center;
     font-size: 10px;
     background-color: var(--teal);
