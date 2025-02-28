@@ -354,7 +354,6 @@ h2 {
     padding-right: 15px;
 }
 
-
 #contact h3 {
     font-size: 50px;
     font-weight: bold;
@@ -411,7 +410,6 @@ label {
     border: none;
 }
 
-
 input[type="radio"] {
     appearance: none;
     margin: 0;
@@ -442,6 +440,7 @@ input[type="radio"] {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    border: none;
 }
 
 input[type="radio"]:checked + .radio-control::before {
