@@ -105,38 +105,42 @@ header #logo{
     display: block;
     position: relative;
     z-index: 1;
-    top: -180px;
-    left: 200px;
+    top: -190px;
+    left: 210px;
     background-color: var(--yellow);
     color: black;
-}
-
-#menu-toggle input {
-    position: relative;
-    width: 20px;
-    height: auto;
-    top: 20px;
-    left: -10px;
-    padding: 0;
 }
 
 #menu-toggle label {
     display: block;
     position: relative; 
+    width: auto;
     z-index: 2;
     background-color: var(--yellow);
-    padding: 10px;
+    padding: 20px;
 }
 
-#menu-toggle li a {
+#menu-toggle input {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    top: 25px;
+    left: -5px;
+    padding: 0px;
+}
+
+#menu-toggle a {
     text-decoration: none;
     color: black;
-    text-transform: uppercase;
 }
 
 #menu-toggle ul {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
+    position: absolute;
+    margin: 0;
+    padding: 0;
     text-align: center;
     background-color: var(--teal);
 }
@@ -146,6 +150,8 @@ header #logo{
     font-size: 15px;
     border-bottom: 2px solid;
     border-bottom-color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 #menu-toggle input:checked + label {
@@ -155,6 +161,10 @@ header #logo{
     right: 200px;
     padding: 5px;
 } 
+
+#menu-toggle input:checked ~ ul {
+    right: 200px;
+}
 
 
 
