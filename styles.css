@@ -662,11 +662,9 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
-    #plan section{
+    #plan div section{
         padding: 20px;
     }
-
     #plan img{
         width: 70%;
     }
